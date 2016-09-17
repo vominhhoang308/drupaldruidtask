@@ -1,0 +1,3 @@
+services:
+ lsw.hello_generator:
+  class: Drupal\lsw\LswServices\HelloGenerator
