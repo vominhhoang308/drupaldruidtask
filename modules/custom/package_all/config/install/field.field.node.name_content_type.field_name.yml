@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.name_content_type
+    - taxonomy.vocabulary.name
+  content:
+    - 'taxonomy_term:name:b1c66535-1575-4241-a2e1-6bd9718863fe'
+id: node.name_content_type.field_name
+field_name: field_name
+entity_type: node
+bundle: name_content_type
+label: Name
+description: 'This is for full name'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b1c66535-1575-4241-a2e1-6bd9718863fe
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      name: name
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

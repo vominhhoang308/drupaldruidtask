@@ -1,0 +1,19 @@
+name: 'Package all'
+description: 'Package the content type, the views and the vocabulary into a feature using the Features module. Place your feature in the same directory as the contrib modules.'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - comment
+  - datetime
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - rdf
+  - taxonomy
+  - text
+  - user
+  - views
